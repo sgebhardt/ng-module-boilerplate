@@ -11,5 +11,5 @@ angular.module('MyApp.blog', [])
 }])
 	
 .controller('BlogController', [ '$scope', function BlogController( $scope ) {
-  
+	$scope.Title = "This is my Blog";
 }])
