@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width" />
     <title>My App</title>
 	
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
 	<link rel="stylesheet" href="css/app.css"/>
   </head>
   <body>
-	<header>
-		<ul>
-		<li><a href="#/home">view1</a></li>
-		<li><a href="#/blog">view2</a></li>
-	</ul>
-  </header>
-	
-	
+	<header class='navbar'>
+		<div class='navbar-inner'>
+			<div class='container-fluid'>
+			<ul class='nav'>
+				<li><a href="#/home">Home</a></li>
+				<li><a href="#/blog">Blog</a></li>
+			</ul>
+		</div>
+	</div>
+  </header>	
 	
 	<p>{{Hello}}</p>
 	<div ng-view></div>
