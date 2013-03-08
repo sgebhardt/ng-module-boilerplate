@@ -1,12 +1,5 @@
 <div>
 	<h3>{{Title}}</h2>
 	
-	<ul ng-controller="BlogEntriesController">
-		<li class="well" ng-repeat="entry in Entries">
-			<p>{{entry.text}}</p>
-			<div ng-repeat="comment in entry.comments">
-				<p>{{comment.text}}</p>
-			</div>
-		</li>
-	<ul>
+	<div ng-include="'partial/blog_entries.html'"></div>
 </div>
