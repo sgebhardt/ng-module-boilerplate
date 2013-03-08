@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app='MyApp' ng-controller='AppController'>
   <head>
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>My App</title>
-	<link rel="stylesheet" href="/css/app.css"/>
+	
+	<link rel="stylesheet" href="css/app.css"/>
   </head>
   <body>
 	<header>My App</header>
+	
+	<p>{{Hello}}</p>
 	
 	<hr>
 	
 	<footer><a href="https://github.com/sgebhardt/ng-module-boilerplate/fork_select">Fork this</a></footer>
 	
 	<script src="lib/angular/angular.js"></script>
+	<script src="js/app.js"></script>
   </body>
 </html>
