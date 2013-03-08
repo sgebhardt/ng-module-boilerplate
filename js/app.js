@@ -2,7 +2,7 @@
 
 /* App Module */
 		
-angular.module('MyApp', [])
+angular.module('MyApp', ['MyApp.home', 'MyApp.blog'])
 	.config( function myAppConfig ( $routeProvider ) {
 		$routeProvider.otherwise({ redirectTo: '/home' });
 	})
