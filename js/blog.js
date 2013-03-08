@@ -6,10 +6,10 @@ angular.module('MyApp.blog', [])
 .config(['$routeProvider', function config( $routeProvider ) {
   $routeProvider.when('/blog', {
     controller: 'BlogController',
-    template: '<p>This is my Blog</p>'
+    templateUrl: 'partial/blog.html'
   });
 }])
 	
-.controller('BlogController', [ '$scope', function HomeController( $scope ) {
+.controller('BlogController', [ '$scope', function BlogController( $scope ) {
   
 }])
