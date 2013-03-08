@@ -2,7 +2,7 @@
 
 /* Blog Module */
 
-angular.module('MyApp.blog', [])
+angular.module('MyApp.blog', ['MyApp.blog.entries'])
 .config(['$routeProvider', function config( $routeProvider ) {
   $routeProvider.when('/blog', {
     controller: 'BlogController',
