@@ -7,6 +7,8 @@ angular.module('MyApp', ['MyApp.home', 'MyApp.blog'])
 		$routeProvider.otherwise({ redirectTo: '/home' });
 	})
 		
-	.controller('AppController', [ '$scope', '$location', function AppCtrl ( $scope, $location ) {
+	.controller('AppController', [ '$scope', function AppController( $scope ) {
 		$scope.Hello = "Hello, World!";
 	}]);
+	
+	
