@@ -1,5 +1,3 @@
-'use strict';
-
 /* jasmine specs for controllers go here */
 describe('MyApp controllers', function() {
 
@@ -35,6 +33,5 @@ describe('MyApp controllers', function() {
 	    it('should create "Hello" model with "This is my Blog"', function () { 
 	    	expect(scope.Title).toBe("This is my Blog");
     	});
- 	});
- 	
+ 	}); 	
 });
